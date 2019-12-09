@@ -14,10 +14,10 @@ Some practiceQQ
 * **HW2** 
 [swiftHW2](/swiftHW2) 
     * Connect the backward to check the user, and then show the tableView with customize cell
-       * **Learn** 
-         * Python/Django
-         * Customize cell
-         * Alamofire
+    * **Learn** 
+        * Python/Django
+        * Customize cell
+        * Alamofire
 * **HW3** 
 [SwiftLast](/SwiftLast)
     * Connect the public api to get the weather information, and show the city data which I search
