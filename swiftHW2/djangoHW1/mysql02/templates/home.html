@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RESTful</title>
+</head>
+<br>
+    <h1>RESTful</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="SUBMIT">POST</button>
+    </form><br/>
+        {% for userList in userList %}
+        {{ userList.user }}:
+        {{ userList.pwd }}<br/>
+        {% endfor %}
+</body>
+</html>

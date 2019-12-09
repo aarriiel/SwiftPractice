@@ -1,0 +1,6 @@
+framework module Pods_SwiftLast {
+  umbrella header "Pods-SwiftLast-umbrella.h"
+
+  export *
+  module * { export * }
+}
