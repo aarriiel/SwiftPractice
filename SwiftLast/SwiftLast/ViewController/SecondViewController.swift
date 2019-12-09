@@ -23,18 +23,16 @@ class SecondViewController: UIViewController {
         tableViewCon.register(UINib(nibName:"TestTableViewCell", bundle:nil),
         forCellReuseIdentifier:"Cell")
         // Do any additional setup after loading the view.
+        
+        self.navigationItem.hidesBackButton = true
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "back", style: .plain, target: self,action: #selector(back(sender:)))
+        self.navigationItem.title = "RESULT"
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @objc func back(sender: UIBarButtonItem) {
+            CityData.clearCity()
+            self.navigationController?.popViewController(animated: true)
     }
-    */
 }
 
 extension SecondViewController: UITableViewDelegate, UITableViewDataSource{

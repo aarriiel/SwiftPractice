@@ -12,9 +12,14 @@ class FailureViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
+        self.navigationItem.title = "LOSER:D"
+        self.navigationItem.hidesBackButton = true
+            navigationItem.leftBarButtonItem = UIBarButtonItem(title: "back", style: .plain, target: self,action: #selector(back(sender:)))
+        }
+        
+        @objc func back(sender: UIBarButtonItem) {
+                self.navigationController?.popViewController(animated: true)
+        }
     
 
     /*

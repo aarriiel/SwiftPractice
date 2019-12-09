@@ -34,11 +34,13 @@ class NetUtil{
                 }else{
                     print("QQ")
                 }
+                completion(1)
             }
             else{
                 print("CONNECT ERROR")
+                completion(0)
             }
-            completion(0)
+            
         }
     }
 }
